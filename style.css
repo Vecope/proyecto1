@@ -2,6 +2,7 @@
 
 #inicio{
     background: url("img/img1.jpg") no-repeat center;
+	/*ca.alfonso: Si usa no-repeat no use cover*/
     background-size: cover;
     height: 100vh;
 }
@@ -248,5 +249,8 @@ input:hover {
   color: #fff;
   box-shadow: inset 0 0 0 10rem rgba(34, 34, 65, .68);
 }
+
+/*ca.alfonso: Puede hacer las cosas evitando tanta redundancia*/
+/*ca.alfonso: Faltan queries */
 
 
