@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Ca.alfonso: Mejor use este meta, para no tener problemas con responsive-->
 	<title>Página personal</title>
 
 	<!-- Hojas de estilo que utiliza el programa -->
 	<link rel="shortcut icon" type="image/x-icon" href="img/icono.ico" />
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<!--Ca.alfonso: Cargar archivos localmente, en caso de caída de bootstrap-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 </head>
 <body>
@@ -14,6 +17,7 @@
 <!-- Sección de header con menu -->
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+	<!--Ca.alfonso: Ese bootstrap si que es feo ala-->
   <a class="navbar-brand" href="#">Página personal</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -55,6 +59,7 @@
 		<h1> Experiencia Laboral </h1>
 	</div>
 
+	<!--Ca.alfonso: Manejo de estilos en hoja aparte, facilita la compilación. -->
 	<input type="image" class="imagen-laboral" src="img/labor1.jpg" onclick="ventana('miventana1',{
                 title: 'MarketTeam - Ingenierio de Innovación',
                 width: 600,
@@ -87,6 +92,7 @@
 				<img class="image-hover" src="img/pasatiempo1-hover.jpg"/>
 			</div>
 			<h4> En League of Legends enfoqué mi pasión en los videojuegos a un nivel competitivo y que mejor que disfrutarlo con amigos. </h4>
+			<!--Ca.alfonso: Me perdió en League o legends -->
 		</div>
 		<div class="hob">
 			<img class="imagen-cuadrada" src="img/pasatiempo2.jpg"/>
