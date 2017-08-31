@@ -1,0 +1,252 @@
+/* Sección de inicio */
+
+#inicio{
+    background: url("img/img1.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.imagen-circular{
+	border-radius: 50%;
+	margin-left: auto;
+    margin-right: auto;
+	width: 25vh;
+	box-shadow: 7px 7px 5px black;
+}
+.centro {
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 0.6px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    height:100vh;
+}
+
+/* Sección de pasatiempos */
+
+#pasatiempos {
+    background: url("img/img2.jpg") no-repeat center;
+    background-size: cover;
+    height: 95vh;
+}
+
+#opciones {
+    height: 65%;
+    padding-left: 17%;
+    padding-right: 17%;
+    text-align: center;
+}
+
+#opciones #titulo {
+	padding-top:10%;
+	margin-bottom:10%;
+	color: black;
+    height: 35%;
+}
+
+#opciones .hob {
+    height: 30%;
+    width: 33.33333333333333%;
+    float: left;
+    display: table;
+    position: relative;
+}
+
+.imagen-cuadrada{
+	border-radius: 2%;
+	margin-left: auto;
+    margin-right: auto;
+	width: 35vh;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.image-hover {
+	border-radius: 2%;
+	margin-left: auto;
+  	margin-right: auto;
+    width: 35vh;
+}
+
+.hob:hover .overlay {
+  opacity: 1;
+}
+
+/* Sección de pasatiempos */
+
+#habilidades {
+    background: url("img/img3.jpg") no-repeat center;
+    background-size: cover;
+    text-align: center;
+    height: 95vh;
+}
+
+#habilidades #titulo {
+	padding-top:5%;
+	-webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 0.6px;
+    -webkit-text-stroke-color: black;
+    height: 20%;
+}
+
+#habilidad{
+    height: 65%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#habilidad .barra {
+	text-align:left;
+    height: 30%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 5%;
+    width: 50%;
+    float: left;
+    display: table;
+    position: relative;
+    color:white;
+}
+
+/* Sección de experiencia laboral */
+
+#experiencia {
+	background: url("img/img4.jpg") no-repeat center;
+    background-size: cover;
+    text-align: center;
+    height: 95vh;
+}
+
+#experiencia #titulo {
+	padding-top:5%;
+	color:black;
+    height: 20%;
+}
+
+.imagen-laboral{
+	margin-left:5%;
+	margin-top:10%;
+	border-radius: 2%;
+	border-style: solid;
+    border-color: black;
+    float:middle;
+	width: 35vh;
+}
+
+.ventana {
+	position: fixed; margin: auto;
+	top:0;left:0;right:0;bottom:0;
+	background: rgba(34,34,68,.8);
+	box-sizing: content-box;
+	visibility: hidden; opacity: 0;
+	transition: all .12s; z-index: 99;
+}
+.ventana.visible {
+	visibility: visible; opacity: 1;
+}
+.ventana * {box-sizing: inherit}
+
+.ventana .panel {
+	position: absolute; margin: auto;
+	top:0;left:0;right:0;bottom:0;
+	max-width: 600px; max-height: 70vh;
+	background: white; border-radius: 10px;
+	color: #000; padding: 50px 0;
+	transform: translateY(-25%);
+	transition: all .12s;
+}
+
+.ventana.nofooter .panel {
+	padding: 50px 0 0 0;
+}
+
+.ventana.visible .panel {
+	transform: none;
+}
+.ventana .title {
+	position: absolute; top: 0;
+	width: 100%; height: 50px;
+	line-height: 50px;
+	background: #e83434;
+	font-weight: bolder; padding: 0 2em;
+	box-shadow: 2px 0 10px rgba(0,0,0,.6);
+	border-radius: 10px 10px 0 0;
+	box-sizing: border-box;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.ventana .panel .close {
+	position: absolute; top: .25em; right: .75em;
+	cursor: pointer; font-size: 25px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+	user-select: none;
+}
+.ventana .panel .content {
+	max-height: 100%; overflow: auto;
+	padding: 1em; box-sizing: border-box;
+}
+.ventana .panel .content iframe:only-child {
+	border: 0; width: 100%;
+	height: 100%; height: 80vh;
+	min-height: 200px;
+}
+.ventana .panel .content img:only-child {
+	width: 100%; max-width: 100%;
+}
+.ventana .panel .footer {
+	position: absolute; bottom: 0;
+	width: 100%; background: orange;
+	font-weight: bolder; padding: 0 .5em;
+	box-shadow: 2px 0 10px rgba(0,0,0,.6);
+	border-radius: 0 0 10px 10px;
+	box-sizing: border-box;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	text-align: right;
+}
+.ventana .panel .footer .action {
+	border-radius: 10px; color: #000;
+	background: #fff; border: 0;
+	min-width: 80px; min-height: 35px;
+	font-weight: bold; cursor: pointer;
+	margin-left: 20px;
+	transition: all .12s;
+}
+.ventana .panel .footer .action:hover {
+	box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+input {
+  border: 3px solid #224;
+  background: #fff;
+  padding: 1rem;
+  margin: 1rem .5rem;
+  font-size: 1.2rem;
+  font-variant: small-caps;
+  transition: all .5s;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 rgba(0,0,0,1);
+}
+input:hover {
+  color: #fff;
+  box-shadow: inset 0 0 0 10rem rgba(34, 34, 65, .68);
+}
+
+

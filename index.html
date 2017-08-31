@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Página personal</title>
+
+	<!-- Hojas de estilo que utiliza el programa -->
+	<link rel="shortcut icon" type="image/x-icon" href="images/icono.ico" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+<body>
+
+<!-- Sección de header con menu -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Página personal</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+    	<li class="nav-item">
+        	<a class="nav-link" href="#inicio">Inicio</a>
+      	</li>
+      	<li class="nav-item">
+        	<a class="nav-link" href="#experiencia">Experiencia Laboral</a>
+      	</li>
+      	<li class="nav-item">
+        	<a class="nav-link" href="#pasatiempos">Pasatiempos</a>
+      	</li>
+      	<li class="nav-item">
+        	<a class="nav-link" href="#habilidades">Habilidades</a>
+      	</li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Sección de inicio -->
+
+<section id="inicio">
+	<div class="centro">
+	<img class="imagen-circular" src="img/profile.jpg"/>
+		<h1> Diego Alejandro Zucchet Cárdenas </h1>
+		<h2> Estudiante de Ingenieria de Sistemas y Computación </h2>
+		<h2> Universidad de los Andes </h2>
+		<h2> Bogotá, Colombia </h2>
+	</div>
+</section>
+
+<!-- Sección de experiencia laboral -->
+
+<section id="experiencia">
+	<div id= "titulo">
+		<h1> Experiencia Laboral </h1>
+	</div>
+
+	<input type="image" class="imagen-laboral" src="img/labor1.jpg" onclick="ventana('miventana1',{
+                title: 'MarketTeam - Ingenierio de Innovación',
+                width: 600,
+                height: 20,
+                content: 'Seguimiento mediante metodología Scrum a proyecto de investifación en etapa de desarrollo, apoyo en desarrollo de aplicación movil de unión de imágenes y desarrollo de aplicación web para clasificación y ruta más óptima de direcciones.'});"/>
+
+	<input type="image" class="imagen-laboral" src="img/labor2.jpg" onclick="ventana('miventana2',{
+                title: 'Seven4n - Desarrollador en práctica',
+                width: 600,
+                height: 20,
+                content: 'Investigación sobre modelos de lenguaje de programación funcional, desarrollo de herramienta interna de la compañía y aprendizaje en porgramación funcional y meotodologías ágiles'});"/>
+
+	<input type="image" class="imagen-laboral" src="img/labor3.jpg" onclick="ventana('miventana3',{
+                title: 'Universidad de los Andes - Proyecto Investigación/Representante',
+                width: 600,
+                height: 20,
+                content: 'Manejador de contenido en Joomla, construcción de ETL y análasis de datos, participación en consejos del departamento, conciliador de conflictos entre comunidad y departamento y por último rendir cuentas de gestión siguiendo los estatutos establecidos'});"/>
+</section>
+
+<!-- Sección de pasatiempos -->
+
+<section id="pasatiempos">
+	<div id="opciones">
+		<div id= "titulo">
+			<h1> Pasatiempos </h1>
+		</div>
+		<div class="hob">
+			<img class="imagen-cuadrada" src="img/pasatiempo1.jpg" alt="Avatar" class="image"/>
+			<div class=overlay>
+				<img class="image-hover" src="img/pasatiempo1-hover.jpg"/>
+			</div>
+			<h4> En League of Legends enfoqué mi pasión en los videojuegos a un nivel competitivo y que mejor que disfrutarlo con amigos. </h4>
+		</div>
+		<div class="hob">
+			<img class="imagen-cuadrada" src="img/pasatiempo2.jpg"/>
+			<div class=overlay>
+				<img class="image-hover" src="img/pasatiempo2-hover.jpg"/>
+			</div>
+			<h4> Aunque no me descato como jugador de microfutbol siempre lo dejo todo en la cancha. </h4>
+		</div>
+		<div class="hob">
+			<img class="imagen-cuadrada" src="img/pasatiempo3.jpg"/>
+			<div class=overlay>
+				<img class="image-hover" src="img/pasatiempo3-hover.jpg"/>
+			</div>
+			<h4> Es el medio de transporte por el cual me desplazo en la ciudad y también para conocer nuevos lugares. </h4>
+		</div>
+	</div>
+</section>
+
+<!-- Sección de habilidades -->
+
+<section id="habilidades">
+	<div id= "titulo">
+		<h1> Habilidades </h1>
+	</div>
+	<div id="habilidad">
+		
+		<div class="barra">
+			<h3> Java: 95% </h3>
+			<div class="progress">
+  				<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 95%"></div>
+			</div>
+		</div>
+		
+		<div class="barra">
+			<h3> C#: 40% </h3>
+			<div class="progress">
+  				<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 40%"></div>
+			</div>
+		</div>
+		<div class="barra">
+			<h3> JavaScript: 80% </h3>
+			<div class="progress">
+  				<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 80%"></div>
+			</div>
+	</div>
+
+	<div class="barra">
+		<h3> JQuery: 60% </h3>
+		<div class="progress">
+  			<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 60%"></div>
+		</div>
+	</div>
+
+	<div class="barra">
+		<h3> HTML5: 85% </h3>
+		<div class="progress">
+ 		 	<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 85%"></div>
+		</div>
+	</div>
+
+	<div class="barra">
+		<h3> CSS3: 95% </h3>
+		<div class="progress">
+  			<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 95%"></div>
+		</div>
+	</div>
+
+	<div class="barra">
+		<h3> SQL: 90% </h3>
+		<div class="progress">
+  			<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 90%"></div>
+		</div>
+	</div>
+
+	<div class="barra">
+		<h3> Mongo DB: 80% </h3>
+		<div class="progress">
+  			<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%"></div>
+		</div>
+	</div>
+</section>
+
+<!-- Footer del programa -->
+<nav class="navbar navbar-dark bg-dark fixed-bottom" id='footer'>
+	<h5> © 2017 Copyright: Diego Zucchet </h5>
+</nav>
+
+<!-- Scripts que ejecuta el programa -->
+<script src="script/ventana.js"/></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+</body>
+</html>
