@@ -26,6 +26,8 @@ function ventana(id, data, ok, cancel, input) {
         d.appendChild(p);
         document.body.appendChild(d);
     }
+    
+    //Ojo con tanta variable, lo puede hacer con menos, mas rapido, y no se enreda
     var mod=document.getElementById(id),
     p=mod.querySelector(".panel"),
     t=mod.querySelector(".panel .title"),
